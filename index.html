@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ConceptArt</title>
-      <link rel="shortcut icon" href="img/favicon-v2.ico">
-      <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConceptArt</title>
+    <link rel="shortcut icon" href="img/favicon-v2.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- <link rel="stylesheet" href="header-mobile.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-      <header> <!---cabeçalho da página-->
-            <div class="cabecalho">
-                  <div class="logo-nome">
-                        <img class="barras" src="img/3-barras.png" alt="três barras">
-                        <img class="logo" src="img/logo.png" alt="imagem logo">
-                                    <p class="nome-cab">ConceptArt</p>
-                  </div>
-                  <nav>
-                        <ul class="reg-log" >
-                              <button class="reg">SIGN IN</button>
-                              <button class="log">LOGIN</button>
-                        </ul>
-                  </nav>
+    <header> <!---cabeçalho da página-->
+        <nav class="navbar">
+            <div class="cab">
+                <button class="menu"><i class="fa-solid fa-bars"></i></button>
+                    <div class="nav-cab">
+                        <p class="inicio-cab">Início</p>
+                        <p class="produto-cab">Produtos</p>
+                        <p class="sobre-cab">Sobre Nós</p>
+                    </div>
+                <p class="auth-buttons">
+                    <button class="reg">SIGN IN</button>
+                    <button class="log">LOGIN</button>
+                </p>
             </div>
-      </header>
-      <p class="discover">DISCOVER JEWELRY</p>
-      <section class="baloes">
-            <div class="balao1"></div>
-            <div class="balao2"></div>
-            <div class="balao3"></div>
-            <div class="balao4"></div>
-      </section>
-      <div class="itens">
-            <p id="id-itens-1">ITENS</p>
-            <div class="spec">
-                  <p>ITEM_NAME1</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME2</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME3</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME4</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME5</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME6</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME7</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME8</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME9</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
-                  <p>ITEM_NAME10</p>
-                  <p>R$xxx.xx</p>
-                  <small>or 10x of R$xxx.xx</small>
-                  <div></div>
+        </nav>
+    </header>
+    
+
+    <p class="discover">DISCOVER JEWELRY</p>
+
+    <section class="baloes">
+        <div class="balao"></div>
+        <div class="balao"></div>
+        <div class="balao"></div>
+        <div class="balao"></div>
+    </section>
+
+    <div class="itens">
+        <p id="id-itens-1">ITENS</p>
+        <div class="spec">
+            <div class="quadrado-item1">
+                <i class="fa-regular fa-heart"></i>
+                <div class="item1">
+                    <p class="item-name1">ITEM_NAME1</p>
+                    <p class="item-price1">R$xxx.xx</p>
+                    <p class="item-div1">or 10x of R$xxx.xx</p>
+                </div>
             </div>
-      </div>
+
+            <div class="quadrado-item2">
+                <div class="item2">
+                    <p id="item-name2">ITEM_NAME2
+                    <p id="item-price2">R$xxx.xx</p>
+                    <p id="item-div2">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item3">
+                <div class="item3">
+                    <p class="item-name3">ITEM_NAME3</p>
+                    <p class="item-price3">R$xxx.xx</p>
+                    <p class="item-div3">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item4">
+                <div class="item4">
+                    <p class="item-name4">ITEM_NAME4</p>
+                    <p class="item-price4">R$xxx.xx</p>
+                    <p class="item-div4">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item5">
+                <div class="item5">
+                    <p class="item-name5">ITEM_NAME5</p>
+                    <p class="item-price5">R$xxx.xx</p>
+                    <p class="item-div5">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item6">
+                <div class="item6">
+                    <p class="item-name6">ITEM_NAME6</p>
+                    <p class="item-price6">R$xxx.xx</p>
+                    <p class="item-div6">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item7">
+                <div class="item7">
+                    <p class="item-name7">ITEM_NAME7</p>
+                    <p class="item-price7">R$xxx.xx</p>
+                    <p class="item-div7">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item8">
+                <div class="item8">
+                    <p class="item-name8">ITEM_NAME8</p>
+                    <p class="item-price8">R$xxx.xx</p>
+                    <p class="item-vdiv">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+
+            <div class="quadrado-item9">
+                <div class="item9">
+                    <p class="item-name9">ITEM_NAME9</p>
+                    <p class="item-price9">R$xxx.xx</p>
+                    <p class="item-vdiv">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+            
+            <div class="quadrado-item10">
+                <div class="item10">
+                    <p class="item-name10">ITEM_NAME10</p>
+                    <p class="item-price10">R$xxx.xx</p>
+                    <p class="item-vadiv">or 10x of R$xxx.xx</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
