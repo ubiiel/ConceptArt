@@ -6,6 +6,10 @@ html{
       scroll-behavior: smooth;
 }
 
+/* html::-webkit-scrollbar {
+      display: none;
+  } */
+
 
 /*itens abaixo do cabecalho*/
 .main {
@@ -29,10 +33,15 @@ html{
       background-color: #fbceb1;
       border-radius: 10%;
       cursor: pointer;
+      transition: transform 0.2s;
+}
+
+.balao:hover {
+      transform: scale(1.1);
 }
 
 /*itens p baixo*/
-.spec {
+.cards {
       display: flex;
       gap: 20px;
 }
@@ -44,12 +53,66 @@ html{
       align-items: center;
       justify-content: center;
       margin-left: 10px;
-      margin: 30px;
       width: 100px;
       height: 50px;
       border-radius: 30%;
-      margin-top: 70px;
 }
+
+
+/* slider itens 1 */
+
+.slider-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .slider-track {
+      display: flex;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .quadrado-item {
+      flex: 0 0 20%; /* Exibe 5 itens por vez */
+      margin: 10px;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    
+    .slider-button {
+      background: #d4d4d4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      border-radius: 10%;
+      padding: 10px;
+      top: 50%;
+      z-index: 1000;
+      transform: translateY(-50%);
+    }
+    
+    .slider-button.prev {
+      left: 10px;
+    }
+    
+    .slider-button.next {
+      right: 10px;
+    }
+    
+
+
 
 
 /* ESTILO ITEM 1 */

@@ -7,6 +7,12 @@ body, html {
     box-sizing: border-box;
 }
 
+
+/* some a barra de rolagem lateral as não remove a fução de scroll */
+/* html::-webkit-scrollbar {
+    display: none;
+} */
+
 /* Header */
 header {
     background-color: #fbceb1;
@@ -70,3 +76,4 @@ a {
     cursor: pointer;
     font-size: 25px;
 }
+
